@@ -27,6 +27,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYF-Rn-swn">
                                 <rect key="frame" x="71" y="617" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="0qp-bC-kHA"/>
+                                </constraints>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="Buckbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4OM-4q-wIM"/>
@@ -41,6 +44,9 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BB0-r2-Qnl">
                                 <rect key="frame" x="273" y="617" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="yuW-Gc-hYS"/>
+                                </constraints>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="nextbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3gN-r3-6ic"/>
@@ -49,17 +55,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="32G-8R-yQ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="1cC-rO-HLn"/>
                             <constraint firstItem="zx1-Wq-YnA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="73X-0H-f3D"/>
                             <constraint firstItem="zx1-Wq-YnA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8WC-05-GcD"/>
-                            <constraint firstItem="BB0-r2-Qnl" firstAttribute="leading" secondItem="32G-8R-yQ7" secondAttribute="trailing" constant="70" id="Bgn-Ly-7cN"/>
-                            <constraint firstItem="32G-8R-yQ7" firstAttribute="leading" secondItem="jYF-Rn-swn" secondAttribute="trailing" constant="70" id="D3P-ud-ak5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BB0-r2-Qnl" secondAttribute="bottom" constant="20" id="SAk-yK-fTy"/>
                             <constraint firstItem="32G-8R-yQ7" firstAttribute="top" secondItem="zx1-Wq-YnA" secondAttribute="bottom" constant="20" id="Vhb-Ro-iRa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jYF-Rn-swn" secondAttribute="bottom" constant="20" id="Ww5-Dc-0c2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="32G-8R-yQ7" secondAttribute="trailing" constant="172" id="Xml-po-mPi"/>
+                            <constraint firstItem="BB0-r2-Qnl" firstAttribute="leading" secondItem="32G-8R-yQ7" secondAttribute="trailing" constant="70" id="ZeH-ZX-aM2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="32G-8R-yQ7" secondAttribute="bottom" constant="20" id="eVZ-Eo-XNU"/>
+                            <constraint firstItem="32G-8R-yQ7" firstAttribute="leading" secondItem="jYF-Rn-swn" secondAttribute="trailing" constant="70" id="fG1-Pc-fHm"/>
                             <constraint firstItem="BB0-r2-Qnl" firstAttribute="top" secondItem="zx1-Wq-YnA" secondAttribute="bottom" constant="20" id="l0P-Hw-OxA"/>
-                            <constraint firstItem="32G-8R-yQ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="nda-NN-R1e"/>
                             <constraint firstItem="jYF-Rn-swn" firstAttribute="top" secondItem="zx1-Wq-YnA" secondAttribute="bottom" constant="20" id="uy2-NZ-pVP"/>
                             <constraint firstItem="zx1-Wq-YnA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="z13-42-Awc"/>
                         </constraints>

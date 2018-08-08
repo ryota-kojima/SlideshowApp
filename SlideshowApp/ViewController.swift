@@ -49,6 +49,17 @@ class ViewController: UIViewController {
     //画像がタップされた時の反応
     @IBAction func BIgScalesegue(_ sender: Any) {
         performSegue(withIdentifier: "result", sender: nil)
+        
+        if timer != nil{
+            self.timer.invalidate()
+            timer=nil
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if timer == nil && play==true{
+            timer=Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updatetimer(_:)), userInfo: nil, repeats: true)
+        }
     }
     
     //画面遷移時に呼ばれる処理
