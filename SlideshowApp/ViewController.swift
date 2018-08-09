@@ -57,6 +57,7 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        //戻ってきた時にスライドショーを再開
         if timer == nil && play==true{
             timer=Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updatetimer(_:)), userInfo: nil, repeats: true)
         }
